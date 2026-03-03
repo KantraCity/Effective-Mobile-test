@@ -17,8 +17,6 @@ import (
 	"github.com/rs/zerolog"
 )
 
-// ── мок сервиса ──────────────────────────────────────────────────────────────
-
 type mockService struct {
 	createFn         func(ctx context.Context, req model.CreateSubscriptionRequest) (int, error)
 	updateFn         func(ctx context.Context, id string, req model.UpdateSubscriptionRequest) error
